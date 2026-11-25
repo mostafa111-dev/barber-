@@ -16,6 +16,15 @@
   <img src="https://img.shields.io/badge/Language-Arabic%20%26%20English-orange.svg" alt="Languages" />
 </p>
 
+<p align="center">
+  <a href="https://mostafa111-dev.github.io/barber-/">
+    <img src="https://img.shields.io/badge/🚀%20Live%20Demo-جرب%20النظام%20مباشرة%20أونلاين-2ea44f?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo" height="38" />
+  </a>
+</p>
+
+> 🌐 **رابط التجربة الحية:** [https://mostafa111-dev.github.io/barber-/](https://mostafa111-dev.github.io/barber-/)  
+> يمكنك فتح الرابط مباشرة من المتصفح وتجربة كافة وظائف النظام (الكاشير، المواعيد، الفواتير، التقارير، الثيم الفاتح/الداكن) دون الحاجة لتثبيت أي برامج!
+
 ---
 
 ## 🌟 نظرة عامة على المشروع
