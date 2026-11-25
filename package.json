@@ -1,0 +1,13 @@
+{
+  "name": "karbigi-desktop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Offline barber shop desktop application",
+  "main": "Desktop/main.js",
+  "author": "Karbigi",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "electron": "45.2.2",
+    "@electron/packager": "20.3.0"
+  }
+}

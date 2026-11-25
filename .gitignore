@@ -1,0 +1,17 @@
+# Electron / Binary build outputs (exceeds GitHub 100MB limit)
+Portable/
+*.exe
+*.zip
+
+# Dependencies
+node_modules/
+
+# Logs and runtime data
+*.log
+npm-debug.log*
+
+# OS metadata
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store

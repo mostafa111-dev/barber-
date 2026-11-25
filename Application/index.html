@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#103d47" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; font-src 'self' data:;" />
+  <title>كربيجي — إدارة المحل</title>
+  <link rel="icon" type="image/svg+xml" href="karbigi-logo.svg" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="theme.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark"></div><div><strong>كربيجي</strong><span>إدارة المحل</span></div></div>
+      <div class="shop-switch"><div class="shop-avatar">✂</div><div><strong id="shopNameSide">كربيجي</strong><small>الفرع الرئيسي</small></div><span class="chevron">⌄</span></div>
+      <div class="nav-label">القائمة الرئيسية</div>
+      <nav id="nav">
+        <button class="nav-item active" data-page="dashboard"><span class="nav-icon">◫</span>الرئيسية</button>
+        <button class="nav-item" data-page="cashier"><span class="nav-icon">▣</span>الكاشير <span class="nav-badge" id="navOpen">مفتوح</span></button>
+        <button class="nav-item" data-page="appointments"><span class="nav-icon">◷</span>الحجوزات</button>
+        <button class="nav-item" data-page="customers"><span class="nav-icon">♙</span>العملاء</button>
+        <div class="nav-label section-label">إدارة المحل</div>
+        <button class="nav-item" data-page="barbers"><span class="nav-icon">♙</span>الحلاقين</button>
+        <button class="nav-item" data-page="services"><span class="nav-icon">✦</span>الخدمات</button>
+        <button class="nav-item" data-page="consumables"><span class="nav-icon">▦</span>المستهلكات</button>
+        <button class="nav-item" data-page="products"><span class="nav-icon">▣</span>المنتجات والمخزون</button>
+        <button class="nav-item" data-page="chairs"><span class="nav-icon">▤</span>الكراسي</button>
+        <button class="nav-item" data-page="expenses"><span class="nav-icon">↗</span>المصروفات</button>
+        <button class="nav-item" data-page="attendance"><span class="nav-icon">◷</span>الحضور والانصراف</button>
+        <button class="nav-item" data-page="payroll"><span class="nav-icon">ج.م</span>الرواتب والعمولات</button>
+        <button class="nav-item" data-page="offers"><span class="nav-icon">٪</span>العروض والخصومات</button>
+        <button class="nav-item" data-page="reminders"><span class="nav-icon">🔔</span>التذكيرات</button>
+        <div class="nav-label section-label">التحليلات</div>
+        <button class="nav-item" data-page="reports"><span class="nav-icon">▥</span>التقارير</button>
+        <button class="nav-item" data-page="settings"><span class="nav-icon">⚙</span>الإعدادات</button>
+        <button class="nav-item" data-page="users"><span class="nav-icon">♙</span>المستخدمين</button>
+      </nav>
+      <div class="sidebar-bottom"><div class="offline-status"><span class="live-dot"></span><div><strong>يعمل دون إنترنت</strong><small>بياناتك محفوظة على الجهاز</small></div></div><button class="profile" id="profileBtn" title="قفل التطبيق وتبديل المستخدم"><div class="profile-pic">م</div><div><strong>مدير المحل</strong><small>المدير</small></div><span class="more">···</span></button></div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar"><div class="breadcrumbs"><span id="shopNameTop">كربيجي</span><b>/</b><strong id="crumb">الرئيسية</strong></div><div class="top-actions"><button class="excel-indicator" id="excelIndicator" title="إعداد قاعدة بيانات Excel"><span class="excel-indicator-dot"></span><span id="excelIndicatorText">Excel غير مربوط</span></button><button class="icon-btn" id="langToggle" title="العربية / English">ع</button><button class="icon-btn" id="themeToggle" title="فاتح / داكن">◐</button><span class="date-pill" id="todayLabel"></span><button class="icon-btn" id="backupBtn" title="نسخة احتياطية">⇩</button><button class="icon-btn" id="helpBtn" title="مساعدة">؟</button><div class="top-avatar">م</div></div></header>
+      <section id="page" class="page-content"></section>
+    </main>
+  </div>
+  <div id="modalRoot"></div>
+  <div id="toast" class="toast"></div>
+  <div id="authRoot"></div>
+  <script src="xlsx.full.min.js"></script>
+  <script src="app.js"></script>
+  <script src="features.js"></script>
+</body>
+</html>
